@@ -1,0 +1,20 @@
+{
+  "name": "front-end",
+  "version": "independent",
+  "private": true,
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "scripts": {
+    "publish": "lerna publish"
+  },
+  "packages": [
+    "packages/*"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
