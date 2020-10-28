@@ -1,6 +1,6 @@
 {
   "name": "@pixelwolf/next-template",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -15,9 +15,9 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@pixelwolf/eslint-config": "^0.0.3",
-    "@pixelwolf/prettier-config": "^0.0.3",
-    "@pixelwolf/tsconfig": "^0.0.3",
+    "@pixelwolf/eslint-config": "^0.0.4",
+    "@pixelwolf/prettier-config": "^0.0.4",
+    "@pixelwolf/tsconfig": "^0.0.4",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
