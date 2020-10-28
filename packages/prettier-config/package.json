@@ -1,0 +1,11 @@
+{
+  "name": "prettier-config",
+  "version": "0.0.1",
+  "author": "PixelwolfHQ <dev@pixelwolf.com.br>",
+  "main": "index.js",
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^2.1.2"
+  }
+}
