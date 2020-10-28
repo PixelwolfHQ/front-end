@@ -5,7 +5,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "prettier": "prettier \"src/**/*.+(ts|tsx|js|jsx|json|yml|yaml|md|mdx)\" --write"
   },
   "dependencies": {
     "next": "latest",
@@ -13,14 +15,32 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@pixelwolf/eslint-config": "^0.0.1",
+    "@pixelwolf/prettier-config": "^0.0.1",
+    "@pixelwolf/tsconfig": "^0.0.1",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
-    "typescript": "4.0",
-    "@pixelwolf/tsconfig": "^0.0.1"
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2",
+    "pretty-quick": "^3.1.0",
+    "typescript": "4.0"
   },
   "workspaceDependencies": {
-    "@pixelwolf/tsconfig": "*"
+    "@pixelwolf/tsconfig": "*",
+    "@pixelwolf/eslint-config": "*",
+    "@pixelwolf/prettier-config": "*"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
   },
   "license": "MIT"
 }

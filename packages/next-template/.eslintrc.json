@@ -1,0 +1,6 @@
+{
+  "extends": "@pixelwolf/eslint-config",
+  "settings": {
+    "import/internal-regex": "^components/|^utils/"
+  }
+}
