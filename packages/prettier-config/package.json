@@ -1,5 +1,5 @@
 {
-  "name": "prettier-config",
+  "name": "@pixelwolf/prettier-config",
   "version": "0.0.1",
   "author": "PixelwolfHQ <dev@pixelwolf.com.br>",
   "main": "index.js",
