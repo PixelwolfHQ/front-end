@@ -1,10 +1,10 @@
 # @pixelwolf/tsconfig
 
-## Installation
+###Installation
 
 `npm i @pixelwolf/tsconfig --save-dev`
 
-## Usage
+### Usage
 
 On `tsconfig.json` file add:
 

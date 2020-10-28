@@ -1,10 +1,10 @@
 # @pixelwolf/eslint-config
 
-## Installation
+### Installation
 
 `npm i @pixelwolf/eslint-config --save-dev`
 
-## Usage
+### Usage
 
 Edit `.eslintrc.json`:
 
@@ -17,7 +17,7 @@ Edit `.eslintrc.json`:
 }
 ```
 
-#### Script in package.json
+### Script in package.json
 
 ```json
 "scripts": {

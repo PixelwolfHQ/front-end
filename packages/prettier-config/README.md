@@ -1,10 +1,10 @@
 # @pixelwolf/prettier-config
 
-## Installation
+###Installation
 
 `npm i @pixelwolf/prettier-config --save-dev`
 
-## Usage
+### Usage
 
 On `.prettierrc.js` file add:
 
@@ -12,7 +12,7 @@ On `.prettierrc.js` file add:
 module.exports = require("@pixelwolf/prettier-config");
 ```
 
-#### Script in package.json
+### Script in package.json
 
 ```json
 "scripts": {
