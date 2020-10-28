@@ -1,0 +1,11 @@
+{
+  "name": "tsconfig",
+  "version": "0.0.1",
+  "author": "PixelwolfHQ <dev@pixelwolf.com.br>",
+  "main": "index.json",
+  "scripts": {},
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.0.5"
+  }
+}
