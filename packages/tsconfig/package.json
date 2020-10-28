@@ -4,8 +4,12 @@
   "author": "PixelwolfHQ <dev@pixelwolf.com.br>",
   "main": "index.json",
   "scripts": {},
-  "license": "MIT",
   "dependencies": {
     "typescript": "^4.0.5"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "gitHead": "9fd768fb23488eb076f4a6c8bdb49829be8adc60"
 }

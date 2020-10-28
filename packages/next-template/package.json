@@ -42,5 +42,9 @@
       "pre-commit": "pretty-quick --staged && npm run lint"
     }
   },
-  "license": "MIT"
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "gitHead": "9fd768fb23488eb076f4a6c8bdb49829be8adc60"
 }

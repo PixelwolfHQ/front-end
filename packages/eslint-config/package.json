@@ -4,7 +4,6 @@
   "author": "PixelwolfHQ <dev@pixelwolf.com.br>",
   "main": "index.js",
   "scripts": {},
-  "license": "MIT",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
@@ -19,5 +18,10 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.1.2",
     "typescript": "^4.0.5"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "gitHead": "9fd768fb23488eb076f4a6c8bdb49829be8adc60"
 }
