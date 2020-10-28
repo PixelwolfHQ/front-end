@@ -8,6 +8,7 @@ module.exports = {
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
+    "prettier",
   ],
   plugins: ["react", "prettier", "react-hooks", "import", "jest"],
   parserOptions: {
@@ -59,6 +60,7 @@ module.exports = {
       1,
       { extensions: [".js", ".jsx", ".tsx"] },
     ],
+    "prettier/prettier": "error",
   },
   overrides: [
     {
