@@ -5,6 +5,9 @@ PixelWolf front-end opinionated configurations for formatting, styling and code 
 ## Features:
 
 - [Eslint](https://github.com/PixelwolfHQ/front-end/tree/master/packages/eslint-config);
+- [Prettier](https://github.com/PixelwolfHQ/front-end/tree/master/packages/prettier-config);
+- [TypeScript](https://github.com/PixelwolfHQ/front-end/tree/master/packages/tsconfig);
+- [Next.js template](https://github.com/PixelwolfHQ/front-end/tree/master/packages/next-template);
 
 ## Development
 
