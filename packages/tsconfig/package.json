@@ -1,6 +1,6 @@
 {
   "name": "@pixelwolfhq/tsconfig",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "PixelwolfHQ <dev@pixelwolf.com.br>",
   "main": "index.json",
   "scripts": {},
