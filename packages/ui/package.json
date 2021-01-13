@@ -42,6 +42,9 @@
       "limit": "10 KB"
     }
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@size-limit/preset-small-lib": "^4.9.1",
@@ -67,5 +70,6 @@
     "@types/styled-components": "^5.1.7",
     "styled-components": "^5.2.1",
     "styled-tools": "^1.7.2"
-  }
+  },
+  "gitHead": "9a88dee963264e61d57bff0d2a3f6fa3fbca307d"
 }
