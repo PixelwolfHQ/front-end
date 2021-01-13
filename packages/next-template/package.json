@@ -1,6 +1,6 @@
 {
   "name": "@pixelwolfhq/next-template",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -15,9 +15,10 @@
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
-    "@pixelwolfhq/eslint-config": "^0.0.9",
-    "@pixelwolfhq/prettier-config": "^0.0.9",
-    "@pixelwolfhq/tsconfig": "^0.0.9",
+    "@pixelwolfhq/eslint-config": "^0.0.10",
+    "@pixelwolfhq/prettier-config": "^0.0.10",
+    "@pixelwolfhq/tsconfig": "^0.0.10",
+    "@pixelwolfhq/ui": "^0.0.10",
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
@@ -35,7 +36,8 @@
   "workspaceDependencies": {
     "@pixelwolfhq/tsconfig": "*",
     "@pixelwolfhq/eslint-config": "*",
-    "@pixelwolfhq/prettier-config": "*"
+    "@pixelwolfhq/prettier-config": "*",
+    "@pixelwolfhq/ui": "*"
   },
   "husky": {
     "hooks": {
