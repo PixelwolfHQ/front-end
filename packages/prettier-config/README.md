@@ -1,6 +1,6 @@
 # @pixelwolfhq/prettier-config
 
-###Installation
+### Installation
 
 `npm i @pixelwolfhq/prettier-config --save-dev`
 

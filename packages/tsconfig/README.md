@@ -1,6 +1,6 @@
 # @pixelwolfhq/tsconfig
 
-###Installation
+### Installation
 
 `npm i @pixelwolfhq/tsconfig --save-dev`
 
