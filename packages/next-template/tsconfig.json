@@ -1,5 +1,8 @@
 {
   "extends": "@pixelwolfhq/tsconfig/index.json",
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": "src"
+  }
 }

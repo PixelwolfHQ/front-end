@@ -17,4 +17,4 @@ It uses `lerna` and `yarn workspace` to manage and publish the packages.
 
 Publish **all** packages that have changed since last version:
 
-`yarn run publish`
+`yarn pub`

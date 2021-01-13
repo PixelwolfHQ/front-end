@@ -17,8 +17,7 @@
     "skipLibCheck": true,
     "strict": true,
     "strictNullChecks": true,
-    "target": "es5",
-    "baseUrl": "src"
+    "target": "es5"
   },
   "exclude": ["node_modules"]
 }

@@ -2,6 +2,7 @@ module.exports = {
   arrowParens: "always",
   bracketSpacing: true,
   embeddedLanguageFormatting: "auto",
+  endOfLine: "lf",
   htmlWhitespaceSensitivity: "css",
   insertPragma: false,
   jsxBracketSameLine: false,
