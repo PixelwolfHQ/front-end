@@ -1,5 +1,5 @@
 {
-  "name": "@pixelwolf/tsconfig",
+  "name": "@pixelwolfhq/tsconfig",
   "version": "0.0.5",
   "author": "PixelwolfHQ <dev@pixelwolf.com.br>",
   "main": "index.json",

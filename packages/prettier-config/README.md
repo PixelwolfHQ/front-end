@@ -1,15 +1,15 @@
-# @pixelwolf/prettier-config
+# @pixelwolfhq/prettier-config
 
 ###Installation
 
-`npm i @pixelwolf/prettier-config --save-dev`
+`npm i @pixelwolfhq/prettier-config --save-dev`
 
 ### Usage
 
 On `.prettierrc.js` file add:
 
 ```json
-module.exports = require("@pixelwolf/prettier-config");
+module.exports = require("@pixelwolfhq/prettier-config");
 ```
 
 ### Script in package.json

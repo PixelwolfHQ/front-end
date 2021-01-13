@@ -1,8 +1,8 @@
-# @pixelwolf/eslint-config
+# @pixelwolfhq/eslint-config
 
 ### Installation
 
-`npm i @pixelwolf/eslint-config --save-dev`
+`npm i @pixelwolfhq/eslint-config --save-dev`
 
 ### Usage
 
@@ -10,7 +10,7 @@ Edit `.eslintrc.json`:
 
 ```json
 {
-  "extends": "@pixelwolf/eslint-config",
+  "extends": "@pixelwolfhq/eslint-config",
   "settings": {
     "import/internal-regex": "^components/|^utils/"
   }

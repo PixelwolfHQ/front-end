@@ -1,5 +1,5 @@
 {
-  "extends": "@pixelwolf/tsconfig/index.json",
+  "extends": "@pixelwolfhq/tsconfig/index.json",
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

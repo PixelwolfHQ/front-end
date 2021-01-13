@@ -1,3 +1,3 @@
 export default function Index(): JSX.Element {
-  return <div>@pixelwolf/next-template</div>
+  return <div>@pixelwolfhq/next-template</div>
 }

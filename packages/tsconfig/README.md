@@ -1,8 +1,8 @@
-# @pixelwolf/tsconfig
+# @pixelwolfhq/tsconfig
 
 ###Installation
 
-`npm i @pixelwolf/tsconfig --save-dev`
+`npm i @pixelwolfhq/tsconfig --save-dev`
 
 ### Usage
 
@@ -12,7 +12,7 @@ On `tsconfig.json` file add:
 
 ```json
 {
-  "extends": "./node_modules/@pixelwolf/tsconfig/index.json"
+  "extends": "./node_modules/@pixelwolfhq/tsconfig/index.json"
 }
 ```
 

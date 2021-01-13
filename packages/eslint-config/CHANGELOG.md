@@ -5,4 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.0.3](https://github.com/PixelwolfHQ/front-end/compare/v0.0.2...v0.0.3) (2020-10-28)
 
-**Note:** Version bump only for package @pixelwolf/eslint-config
+**Note:** Version bump only for package @pixelwolfhq/eslint-config
