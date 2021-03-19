@@ -42,14 +42,23 @@ Mesmo em casos assim, se a página está ficando muito grande, é interessante f
 ![Exemplo de componentização não reutilizável](./assets/example-1.png)
 
 Por exemplo, imagine que você tenha uma a página de listagem de produtos no diretório `/src/Pages/ProductList/index.tsx` e nela há um componente que não é reutilizável por outras páginas do sistema, mas que pelo tamanho que ele está ficando você deseja criar um arquivo exclusivamente para esse componente. Algo que poderia ser feito seria criar esse componente dentro de uma pasta `Components`, porém, esta pasta ficaria dentro da pasta da sua página, ficando a assim `/src/Pages/ProductList/Components/MyExampleComponent.tsx`.
-Desta forma, todos os componentes exclusivos da pagina `ProductList` estaria dentro desta página, facilitando assim saber que o que está alí dentro é algo que não é reutilizável, mas que foi componetizado para simplificar a complexidade da página `ProductList`
+Desta forma, todos os componentes exclusivos da pagina `ProductList` estaria dentro desta pasta, facilitando assim saber que o que está alí dentro é algo que não é reutilizável, mas que foi componetizado para simplificar a complexidade da página `ProductList`
 
 
-### Outras dicas 
+### Components de componentes
+
+Outra situação em que é possível fazer componentes é quando temos dois ou mais componentes e que juntos se tornam um outro componente. Tipo aquele botão e input que juntos viram uma barra de busca, sacou?
 
 
-## Atomic design
+![Exemplo instagram](./assets/page_components_markup.png)
 
+Observe essa imagem. As caixas em roxo são os componentes "Micro", ou seja, componentes pequenas que possuem uma ação bem específica. Já as caixas vermelhas, são os "Macros" ou componentes de de componentes. Um componente "Macro" é um componente maior que junta vários outros componentes menos dentro de sí. Assim, também facilita a reutilização pois toda vez que precisarmos daquele conjunto de componentes juntos podemos utilizar esse componente maior no lugar de ficar chamando cada componente pequeno um por um. 
+
+------ I'M HERE  ------
+
+
+### Reutilização sem componentes 
+Nem todo código repetido nos componentes podem sem quebrados em outros componentes menores.Também temos códigos repetidos que são lógicas para tratar algum problema, coisas como: formatação de datas, buscar um endereço com base num cep, tratamento de dados e coisas do tipo. Mesmo nesses casos ainda sim podemos fazer uso da reutilização, pode-se pegar esse trecho de lógica repetida, criar uma função que fica responsável pela aquela atividade e colocá-la dentro de uma pasta `src/utils` na raiz do projeto. Desta forma, toda vez que você precisar, por exemplo, buscar um endereço com base no CEP, você pode importar a função `getAddressByCep` do seu `utils` sem precisar copiar e colar o mesmo trecho de código para uma nova página.  
 
 
 
