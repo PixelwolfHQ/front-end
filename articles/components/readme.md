@@ -72,9 +72,10 @@ Nem todo código repetido nos componentes podem sem quebrados em outros componen
 
 ## Finalizando
 
-[Adicionar um breve parágrafo finalizando tudo]
-## Referências
+Tentei neste artigo mostrar algumas dicas para escrever um código que seja, pelo menos, um pouco mais manutenível. Tentei passar um pouco da minha experiência do assunto, então pode ser que tenha algo que não caiba na realidade do projeto que você está trabalhando. Caso tenha curtido o tema, sugiro novamente que pesquise por *[Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)* e também se tiver algo para acrescentar ficaria agradecido se  compartilhasse comigo também, assim podemos sempre ir evoluindo. 
 
+
+## Referências
 
 
 [Componentização no front-end I](https://inside.contabilizei.com.br/componentiza%C3%A7%C3%A3o-no-front-end-3fc889a363df)
