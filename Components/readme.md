@@ -4,7 +4,7 @@ Uma das minhas maiores dores no desenvolvimento de aplicações front-end é qua
 
 ## O velho e o novo testamento
 
-Como já citei anteriormente, as vezes, no nosso dia a dia de desenvolvimento acabamos deixando um componente tão grande que caberia 2 bíblias dentro dele 🤣.
+Como já citei anteriormente, as vezes, no nosso dia a dia de desenvolvimento acabamos deixando um componente tão grande que caberiam 2 bíblias dentro dele 🤣.
 
 Para citar alguns dos problemas de componentes desse tamanho seria:
 
@@ -24,9 +24,11 @@ Também se torna comum ver que em arquivos desse tipo há uma grande quantidade 
 
 Ninguém gosta da sensação que se tem ao abrir um arquivo e pensar "eu não faço idéia do que tem aqui!". O seu coleguinha não gosta e você provavelmente também não.
 
+> OBS: Nos exemplos que cito abaixo estarei usando Reactjs, mas nada impede que você aplique os conceitos em outras bibliotecas/frameworks. 
+
 ## Virando o jogo
 
-Para virar o jogo e começar a criar componentes que sejam mais manuteníveis, fáceis de ler, aproveitar da reutilização e, não menos importante, deixar os coleguinhas mais felizes é interessante levar em consideração algumas boas práticas enquanto estiver escrevendo seus componentes. Na internet encontramos diversos posts/artigos com diversas dicas do que pode ser feito para ter componentes mais manuteníveis e simples. Aqui não irei tratar uma especificamente, mas sim de um pedacinho de cada coisa que vi e que fazem sentido para mim. Caso você tenha interesse em se aprofundar mais no assunto recomendo muito que busque por *Atomic Design*. 
+Para virar o jogo e começar a criar componentes que sejam mais manuteníveis, fáceis de ler, aproveitar da reutilização e, não menos importante, deixar os coleguinhas mais felizes é interessante levar em consideração algumas boas práticas enquanto estiver escrevendo seus componentes. Na internet encontramos diversos posts/artigos com diversas dicas do que pode ser feito para ter componentes mais manuteníveis e simples. Aqui não irei tratar uma especificamente, mas sim de um pedacinho de cada coisa que vi e que fazem sentido para mim. Caso você tenha interesse em se aprofundar mais no assunto recomendo muito que busque por *[Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)*.  
 
 
 ### Componentes genéricos reutilizáveis
@@ -39,24 +41,28 @@ Há situações onde trechos de códigos estão se repetindo, porém, não é al
 
 Mesmo em casos assim, se a página está ficando muito grande, é interessante fazer a componentização deste trecho, porém, com uma diferença. No lugar de colocar esse componente na pasta `src/Components` você o colocará na numa pasta `Components` dentro da pasta da sua *Página*. 
 
-![Exemplo de componentização não reutilizável](./assets/example-1.png)
 
 Por exemplo, imagine que você tenha uma a página de listagem de produtos no diretório `/src/Pages/ProductList/index.tsx` e nela há um componente que não é reutilizável por outras páginas do sistema, mas que pelo tamanho que ele está ficando você deseja criar um arquivo exclusivamente para esse componente. Algo que poderia ser feito seria criar esse componente dentro de uma pasta `Components`, com o caminho desse componente ficando assim: `/src/Pages/ProductList/Components/MyExampleComponent.tsx`.
 Desta forma, todos os componentes exclusivos da pagina `ProductList` estaria dentro desta pasta, facilitando a identificação do que está alí dentro é algo que não é reutilizável, mas que foi componetizado para simplificar a complexidade da página `ProductList`
 
+![Exemplo de componentização não reutilizável](./assets/example-1.png)
 
-### Components de componentes
+
+
+### Componentes de componentes
 
 Outra situação em que é possível fazer componentes é quando temos dois ou mais componentes e que juntos se tornam um outro componente. Tipo aquele botão e input que juntos viram uma barra de busca, sacou?
 
 
 ![Exemplo instagram](./assets/page_components_markup.png)
 
-Observe a imagem acima. As caixas em roxo são os componentes "Micro", ou seja, componentes pequenas que possuem uma ação bem específica. Já as caixas vermelhas, são os "Macros" ou componentes de de componentes. Um componente "Macro" é um componente maior que junta vários outros componentes menos dentro de sí. Assim, também facilita a reutilização pois toda vez que precisarmos daquele conjunto de componentes juntos podemos utilizar esse componente maior no lugar de ficar chamando cada componente pequeno um por um. 
+Observe a imagem acima. As caixas em roxo são os componentes "Micro", ou seja, componentes pequenos que possuem uma ação bem específica. Já as caixas vermelhas temos os "Macros" ou componentes de de componentes. Um componente "Macro" é um componente maior que junta vários outros componentes menores dentro de sí. Assim, também facilita a reutilização pois toda vez que precisarmos daquele conjunto de componentes juntos podemos utilizar esse componente maior no lugar de ficar chamando cada componente pequeno um por um. 
 
-As aplicações para esse tipo de componentização são diversas. Você pode, por exemplo, querer criar um componente de uma biblioteca que você usa para que que a chamada dele fique mais simples.
- Nas imagens abaixos veja que há dois exemplos de componentes, o primeiro é o **DefaultModal** e o segundo é **CustomModal**. Observe  que o **CustomModal** está bem mais simples, sem precisar colocar tanta coisa no meio do componente e esses dois componentes fazem a mesma coisa. A diferença é que no **CustomModal** foi criado um componente que encapsula o código da primeira imagem expondo apenas algumas props com os dados que de fato alteram e no corpo da modal que você sim tem uma liberar para adicionar aquilo que não se repete. Desta forma, o título, os botões de ações, as funções que checa se modal está aberta ou fechada e a função que fecha a modal ficam tudo "escondidas" para quem está usando segunda versão.  
+As aplicações para esse tipo de componentização são diversas. Você pode, por exemplo, querer criar um componente de uma biblioteca que você usa para que que a chamada dele fique mais simples que é o exemplo que darei a seguir:
 
+ Nas imagens abaixos veja que há dois exemplos de componentes, o primeiro é o **DefaultModal** e o segundo é **CustomModal**. Observe  que o **CustomModal** está bem mais simples, sem precisar colocar tanta coisa no meio do componente e esses dois componentes fazem a mesma coisa. A diferença é que no **CustomModal** foi criado um componente que encapsula o código da primeira imagem, expondo apenas algumas props com os dados que de fato alteram e também  permite que seja passado um "*filho*" no corpo da modal para que você possa adicionar elementos mais customizáveis. Desta forma, o título, os botões de ações, as funções que checa se modal está aberta ou fechada, ficam tudo "escondidas" para quem está usando a versão **CustomModal** .  
+
+![Exemplo instagram](./assets/modal-example.png)
 ![Exemplo instagram](./assets/defaultModal-original.png)
 ![Exemplo instagram](./assets/defaultModal-component.png)
 
@@ -64,7 +70,9 @@ As aplicações para esse tipo de componentização são diversas. Você pode, p
 Nem todo código repetido nos componentes podem sem quebrados em outros componentes menores.Também temos códigos repetidos que são lógicas para tratar algum problema, coisas como: formatação de datas, buscar um endereço com base num cep, tratamento de dados e coisas do tipo. Mesmo nesses casos ainda sim podemos fazer uso da reutilização, pode-se pegar esse trecho de lógica repetida, criar uma função que fica responsável pela aquela atividade e colocá-la dentro de uma pasta `src/utils` na raiz do projeto. Desta forma, toda vez que você precisar, por exemplo, buscar um endereço com base no CEP, você pode importar a função `getAddressByCep` do seu `utils` sem precisar copiar e colar o mesmo trecho de código para uma nova página.  
 
 
+## Finalizando
 
+[Adicionar um breve parágrafo finalizando tudo]
 ## Referências
 
 
