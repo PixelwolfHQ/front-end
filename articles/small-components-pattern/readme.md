@@ -1,16 +1,16 @@
 # O problema
 
-Uma das minhas maiores dores no desenvolvimento de aplicações front-end é quando abro um componente desenvolvido por um colega e vejo que este possui 2 mil linhas em um único arquivo. Para mim, isso é ruim pois demora para conseguir entender o que de fato todas aquelas linhas fazem - isso quando eu entendo. Então torna-se necessário desprender de uma quantidade x de tempo para ir lendo tudo até fazer, de fato, o eu precisava inicialmente. Para resolver ou, pelo menos, amenizar esse problema há algumas técnicas que podem ser utilizadas e é sobre isso que venho tratar aqui.
+Uma das minhas maiores dores no desenvolvimento de aplicações front-end é quando abro um componente desenvolvido por um colega e vejo que este possui 2 mil linhas em um único arquivo. Para mim, isso é ruim pois demoro para conseguir entender o que de fato todas aquelas linhas fazem - isso quando eu entendo. Então torna-se necessário desprender de uma quantidade x de tempo para ir lendo tudo até fazer, de fato, o eu precisava inicialmente. Para resolver ou, pelo menos, amenizar esse problema existem algumas técnicas que podem ser utilizadas e é sobre isso que venho tratar aqui.
 
 ## O velho e o novo testamento
 
 Como já citei anteriormente, as vezes, no nosso dia a dia de desenvolvimento acabamos deixando um componente tão grande que caberiam 2 bíblias dentro dele 🤣.
 
-Para citar alguns dos problemas de componentes desse tamanho seria:
+Para citar alguns dos problemas do arquivo desse tamanho seria:
 
 ### Dificuldade na legibilidade da página
 
-Com páginas muito grandes o processo de leitura acaba demorando mais e, por consequência, o entendimento também. Demora-se mais tempo para conseguir entender o que cada método, função ou trecho de código executa e quando executa. 
+Com arquivos muito grandes o processo de leitura acaba demorando mais e, por consequência, o entendimento também. Demora-se mais tempo para conseguir entender o que cada método, função ou trecho de código executa e quando executa.
 
 ### Baixa manutenibilidade
 
@@ -72,7 +72,7 @@ Nem todo código repetido nos componentes podem sem quebrados em outros componen
 
 ## Finalizando
 
-Tentei neste artigo mostrar algumas dicas para escrever um código que seja, pelo menos, um pouco mais manutenível. Tentei passar um pouco da minha experiência do assunto, então pode ser que tenha algo que não caiba na realidade do projeto que você está trabalhando. Caso tenha curtido o tema, sugiro novamente que pesquise por *[Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)* e também se tiver algo para acrescentar ficaria agradecido se  compartilhasse comigo também, assim podemos sempre ir evoluindo. 
+Tentei neste artigo mostrar algumas dicas para escrever um código que seja, pelo menos, um pouco mais manutenível. Tentei passar um pouco da minha experiência do assunto, então pode ser que tenha algo que não caiba na realidade do projeto que você está trabalhando. Caso tenha curtido o tema, sugiro novamente que pesquise por *[Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)*, pois o que mostrei aqui sobre ele foi apenas a ponta do iceberg. E se tiver algo para acrescentar ficaria agradecido se  compartilhasse comigo também, assim podemos sempre ir evoluindo. 
 
 
 ## Referências
