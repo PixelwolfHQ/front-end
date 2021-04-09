@@ -74,7 +74,7 @@ function displayPyramid(numberOfLine) {
 
 ```javascript
 function printSeat(ticketCode) {
-  if(ticketCode.startsWith("A") || ticketCode.startsWith("B") {
+  if (ticketCode.startsWith("A") || ticketCode.startsWith("B")) {
     printVipSeat();
   } else {
     printBasicSeat();
@@ -86,7 +86,7 @@ function printSeat(ticketCode) {
 
 ```javascript
 function printSeat(ticketCode) {
-  if(ticketCode.startsWith("A") || ticketCode.startsWith("B") {
+  if (ticketCode.startsWith("A") || ticketCode.startsWith("B")) {
     return printVipSeat();
   }
   return printBasicSeat();
