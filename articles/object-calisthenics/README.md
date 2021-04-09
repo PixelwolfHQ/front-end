@@ -127,6 +127,8 @@ for (let index = 1; index <= count; index++) {
 
 ## Referências
 
+[Clean Code — Object Calisthenics in Javascript](https://medium.com/@davidsen/clean-code-object-calisthenics-f6f4dec07c8b)
+
 [Desenvolva um código melhor com Object Calisthenics](https://imasters.com.br/desenvolvimento/desenvolva-um-codigo-melhor-com-object-calisthenics)
 
 [Writing cleaner code with Object Calisthenics](https://dev.to/pbouillon/writing-cleaner-code-with-object-calisthenics-1ea0)
