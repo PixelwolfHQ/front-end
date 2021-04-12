@@ -1,11 +1,13 @@
-import Image from "next/image"
-import { Heading } from '@pixelwolfhq/ui'
+import Image from 'next/image';
+
+// eslint-disable-next-line import/no-unresolved
+import { Heading } from '@pixelwolfhq/ui';
 
 export default function Index(): JSX.Element {
-  return (
-    <div className="pixelwolf">
-      <Image src="/images/logo.svg" alt="Pixelwolf" width={241} height={42} />
-      <Heading as="h1">@pixelwolfhq/next-template</Heading>
-    </div>
-  )
+	return (
+		<div className="pixelwolf">
+			<Image src="/images/logo.svg" alt="Pixelwolf" width={241} height={42} />
+			<Heading as="h1">@pixelwolfhq/next-template</Heading>
+		</div>
+	);
 }
