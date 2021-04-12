@@ -1,5 +1,5 @@
 {
-  "version": "0.0.13",
+  "version": "0.0.14",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -47,9 +47,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
-    "@pixelwolfhq/eslint-config": "^0.0.13",
-    "@pixelwolfhq/prettier-config": "^0.0.13",
-    "@pixelwolfhq/tsconfig": "^0.0.13",
+    "@pixelwolfhq/eslint-config": "^0.0.14",
+    "@pixelwolfhq/prettier-config": "^0.0.14",
+    "@pixelwolfhq/tsconfig": "^0.0.14",
     "@size-limit/preset-small-lib": "^4.9.1",
     "@storybook/addon-essentials": "^6.1.14",
     "@storybook/addon-info": "^5.3.21",
