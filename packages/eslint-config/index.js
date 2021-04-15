@@ -78,8 +78,6 @@ module.exports = {
       ],
       plugins: ["@typescript-eslint"],
       rules: {
-        indent: ["warn", "tab"],
-        "linebreak-style": ["warn", "unix"],
         quotes: ["warn", "single"],
         semi: "warn",
         "react/prop-types": "off",
@@ -94,6 +92,7 @@ module.exports = {
         "arrow-spacing": "error",
         "implicit-arrow-linebreak": ["error", "beside"],
         "no-confusing-arrow": "error",
+        "import/no-unresolved": "off",
         "import/default": "off",
         "import/order": "off",
         "import-helpers/order-imports": [
