@@ -1,6 +1,6 @@
 {
   "name": "@pixelwolfhq/eslint-config",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "author": "PixelwolfHQ <dev@pixelwolf.com.br>",
   "main": "index.js",
   "scripts": {},
