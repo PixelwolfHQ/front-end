@@ -134,3 +134,7 @@ for (let index = 1; index <= count; index++) {
 [Writing cleaner code with Object Calisthenics](https://dev.to/pbouillon/writing-cleaner-code-with-object-calisthenics-1ea0)
 
 [Object Calisthenics](https://williamdurand.fr/2013/06/03/object-calisthenics/)
+
+## Conclusão
+
+Quando falamos de um código limpo o que não falta é material disponível sobre o assunto. O que passei aqui foi só a ponta do ‘iceberg’, para vermos que pequenas mudanças no processo de escrita do código já podemos obter melhorias significativas na qualidade do que é produzido. Se ainda têm interesse sobre o assunto, pesquise mais sobre Object Calisthenics.
